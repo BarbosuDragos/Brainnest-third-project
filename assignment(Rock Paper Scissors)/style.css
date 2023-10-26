@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #020024, #9a4795, #e1e65d)
+}
+
+.buttons {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    border: 3px solid #7166d3;
+    background-image: -webkit-linear-gradient(30deg, #7166d3 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #7166d3 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+}
+
+.buttons:hover {
+    background-position: 100%;
+    color: #7166d3;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#compPoints {
+    margin-right: 10px;
+}
+
+#user {
+    margin-left: -15px;
+    margin-right: 18px;
+}
+
+#comp {
+    margin-right: 6px;
+    margin-left: 14px;
+}
+
+#sign,
+#userPoints {
+    margin-right: 3px;
+}
+
+#user,
+#comp {
+    height: 40px;
+    width: 100px;
+    background: #d32F2F;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+#userPoints,
+#sign,
+#compPoints {
+    font-size: 60px;
+    margin: 0 5px;
+}
